@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/detail/detail",
+        "pages/type/type"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#0E1327",
+        "backgroundColor": "#333449",
+        "navigationBarTitleText": "周公解梦境",
+        "navigationBarTextStyle": "white"
+    }
+}

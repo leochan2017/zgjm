@@ -1,0 +1,23 @@
+<!-- <image class="background-image blur" src="../../images/bg1.png"></image> -->
+<view class="container page-body" hidden="{{isLoading}}">
+    <view wx:if="{{results.length > 0}}" class="detail-body">
+        <view class="detail-body-title">
+            <text>{{searchKey}}</text>
+        </view>
+        <view class="detail-body-item" wx:for="{{results}}">
+            <text>{{item.detail}}</text>
+        </view>
+    </view>
+    <view wx:else class="fail-body">
+        <view>
+            <icon type="warn" size="80"></icon>
+        </view>
+        <view>
+            <text>没有搜到与"{{searchKey}}"相关的内容</text>
+        </view>
+    </view>
+    <view class="leo-btn">
+        <button hover-class="button-hover" bindtap="goPageType">梦境类别</button>
+        <button hover-class="button-hover" class="light" bindtap="goPageHome">返回首页</button>
+    </view>
+</view>
