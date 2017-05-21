@@ -51,7 +51,7 @@ Page({
     },
     // 分类页
     goPageType() {
-        wx.navigateTo({
+        wx.redirectTo({
             url: '../groupList/groupList'
         });
     },
