@@ -1,9 +1,10 @@
 {
     "pages": [
+        "pages/index/index",
+        "pages/detail/detail",
         "pages/groupList/groupList",
         "pages/titleList/titleList",
-        "pages/index/index",
-        "pages/detail/detail"
+        "pages/leo/leo"
     ],
     "window": {
         "backgroundTextStyle": "light",

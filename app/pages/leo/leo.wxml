@@ -1,0 +1,28 @@
+<view class="leo-page">
+    <view class="leo-bd">
+        <view class="logo">
+            <image src="../../images/logo-128.png"></image>
+        </view>
+        <view class="title">
+            <text>周公解梦境 v1.0</text>
+        </view>
+        <view class="detail">
+            <text>By Leo</text>
+        </view>
+        <view>
+            <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">打赏作者
+            </button>
+        </view>
+    </view>
+    <view class="weui-footer weui-footer_fixed-bottom">
+        <view class="weui-footer__text">
+            Copyright © Leojs.com
+        </view>
+        <view class="weui-footer__text">
+            如果你有好的意见或建议, 欢迎给我:
+        </view>
+        <view class="weui-footer__text">
+            Email: Leochan2017@gmail.com
+        </view>
+    </view>
+</view>

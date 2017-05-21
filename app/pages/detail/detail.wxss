@@ -7,18 +7,18 @@ image.blur {
 
 .detail-body {
     width: 100%;
-    min-height: 720rpx;
+    min-height: 780rpx;
     font-size: 34rpx;
-    color: #7F8A9F;
     margin-top: 40rpx;
     margin-bottom: 60rpx;
+    color: #888;
 }
 
 .detail-body-title {
     text-align: center;
     font-weight: 900;
     font-size: 40rpx;
-    color: #fff;
+    color: #888;
 }
 
 .detail-body-item {
@@ -33,14 +33,14 @@ image.blur {
 
 .fail-body {
     width: 100%;
+    min-height: 780rpx;
     text-align: center;
     margin-top: 90rpx;
     margin-bottom: 60rpx;
-    line-height: 70rpx;
-    color: #b2b2b2;
+    line-height: 90rpx;
+    color: #888;
 }
 
-
-Page {
+/*Page {
     background-color: #465061;
-}
+}*/

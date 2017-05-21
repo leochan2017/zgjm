@@ -1,10 +1,9 @@
-const datas = require('../../utils/data.js');
-
-var app = getApp()
+const Util = require('../../utils/util.js');
 Page({
     data: {
         searchKey: '' // 输入查询的关键字
     },
+    // 检查输入内容
     checkData() {
         let key = this.data.searchKey;
 
@@ -20,15 +19,29 @@ Page({
 
         return true;
     },
+    // 执行搜索
     searchTap() {
         if (!this.checkData()) return;
 
         let key = this.data.searchKey;
 
+        let index1 = key.indexOf('梦到了');
+
+        if (index1 != -1) {
+            key = key.substr(index1 + 3);
+        }
+
+        let index2 = key.indexOf('梦到');
+
+        if (index2 != -1) {
+            key = key.substr(index2 + 2);
+        }
+
         wx.navigateTo({
             url: '../detail/detail?key=' + key
         });
     },
+    // 搜索内容变动
     changeSearchKey(e) {
         let val = e.detail.value;
 
@@ -36,6 +49,6 @@ Page({
             searchKey: val
         });
     },
-    onLoad: function() {
-    }
-})
+    // 定义转发
+    onShareAppMessage: Util.shareConfig
+});

@@ -1,5 +1,4 @@
 @import 'weui.wxss';
-
 .container {
     width: 100%;
     height: 100%;
@@ -59,4 +58,30 @@
 
 .leo-btn button.light {
     background-color: #b2b2b2!important;
+}
+
+Page {
+    color: #7F8A9F;
+    background-color: #34354a;
+}
+
+
+/*一些公用的修改weui的class*/
+
+.leo-content-font {
+    color: #888;
+}
+
+.leo-border {
+    border-color: #b2b2b2;
+}
+
+.leo-title {
+    text-align: center;
+    margin: 40rpx auto;
+    font-size: 40rpx;
+}
+
+.leo-footer {
+    text-decoration: underline;
 }

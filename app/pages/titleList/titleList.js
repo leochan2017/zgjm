@@ -1,5 +1,5 @@
-// const datas = require('../../utils/data.js');
 const titleData = require('../../utils/titleData.js');
+const Util = require('../../utils/util.js');
 
 var app = getApp()
 Page({
@@ -12,6 +12,7 @@ Page({
         this.setData({
             index: index
         });
-
-    }
-})
+    },
+    // 定义转发
+    onShareAppMessage: Util.shareConfig
+});
