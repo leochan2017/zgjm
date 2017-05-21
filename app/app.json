@@ -1,8 +1,9 @@
 {
     "pages": [
+        "pages/groupList/groupList",
+        "pages/titleList/titleList",
         "pages/index/index",
-        "pages/detail/detail",
-        "pages/type/type"
+        "pages/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",

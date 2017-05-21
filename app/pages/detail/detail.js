@@ -52,7 +52,7 @@ Page({
     // 分类页
     goPageType() {
         wx.navigateTo({
-            url: '../type/type'
+            url: '../groupList/groupList'
         });
     },
     onLoad: function(option) {

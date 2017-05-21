@@ -1,0 +1,12 @@
+<!-- <image class="background-image" src="../../images/bg1.png"></image> -->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{groupData}}">
+                <navigator url="../titleList/titleList?index={{index}}" class="weui-grid" hover-class="weui-grid_active">
+                    <view class="weui-grid__label">{{item}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
