@@ -14,5 +14,12 @@ Page({
         });
     },
     // 定义转发
-    onShareAppMessage: Util.shareConfig
+    onShareAppMessage: Util.shareConfig,
+    onLoad(option = {}) {
+        let title = option.title || '类目';
+
+        wx.setNavigationBarTitle({
+            title: title
+        });
+    }
 });

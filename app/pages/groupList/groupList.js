@@ -6,5 +6,10 @@ Page({
         groupData: groupData
     },
     // 定义转发
-    onShareAppMessage: Util.shareConfig
+    onShareAppMessage: Util.shareConfig,
+    onLoad() {
+        wx.setNavigationBarTitle({
+            title: '梦境类别'
+        });
+    }
 });

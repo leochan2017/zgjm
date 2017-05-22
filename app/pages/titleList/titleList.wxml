@@ -1,12 +1,12 @@
 <image class="background-image" src="../../images/bg1.png"></image>
 <view class="page">
-    <view class="leo-title">
+    <!-- <view class="leo-title">
         <text>选择梦境的内容</text>
-    </view>
+    </view> -->
     <view class="page__bd">
-        <view class="weui-grids leo-border">
+        <view class="weui-grids leo-border mb20">
             <block wx:for="{{titleData[index]}}">
-                <navigator url="../detail/detail?key={{item}}&fromTitleList=true" open="redirectTo" class="weui-grid leo-border" hover-class="weui-grid_active">
+                <navigator url="../detail/detail?key={{item}}&fromTitleList=true" open="redirectTo" class="weui-grid leo-border-item" hover-class="weui-grid_active">
                     <view class="weui-grid__label leo-content-font">{{item}}</view>
                 </navigator>
             </block>

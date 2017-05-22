@@ -74,6 +74,18 @@ Page {
 
 .leo-border {
     border-color: #b2b2b2;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.leo-border-item {
+    border-color: #b2b2b2;
+    border-right: 0;
+    border-top: 0;
+    width: 25%;
+    padding-bottom: 10rpx;
+    margin: 0 30rpx;
 }
 
 .leo-title {
@@ -84,4 +96,9 @@ Page {
 
 .leo-footer {
     text-decoration: underline;
+}
+
+
+.mb20 {
+    margin-bottom: 20rpx;
 }
