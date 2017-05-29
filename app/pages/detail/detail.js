@@ -54,7 +54,7 @@ Page({
     },
     onLoad: function(option) {
         this.setData({
-            searchKey: option.key || '大风123'
+            searchKey: option.key || 'Leo'
         });
 
         option.fromTitleList && this.setData({

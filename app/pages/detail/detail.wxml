@@ -1,35 +1,45 @@
 <image class="background-image blur" src="../../images/bg1.png"></image>
 <view class="container page-body" hidden="{{isLoading}}">
-    <view wx:if="{{results.length > 0}}" class="detail-body">
-        <view class="detail-body-title">
-            <text>{{searchKey}}</text>
+    <!-- 搜到结果 -->
+    <block wx:if="{{results.length > 0}}">
+        <view class="detail-body">
+            <view class="detail-body-title">
+                <text>{{searchKey}}</text>
+            </view>
+            <view class="detail-body-item" wx:for="{{results}}">
+                <text>{{item.detail}}</text>
+            </view>
         </view>
-        <view class="detail-body-item" wx:for="{{results}}">
-            <text>{{item.detail}}</text>
+        <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__text">
+                你可以通过右上角转发本页结果
+            </view>
         </view>
-    </view>
+    </block>
+    <!-- 没有搜到结果 -->
     <view wx:else class="fail-body">
         <view>
             <icon type="warn" size="80"></icon>
         </view>
-        <view>
-            <text>没有搜到与"{{searchKey}}"相关的内容</text>
+        <view class="detail-body-item">
+            <text>周公: 暂无与"{{searchKey}}"相关的解梦</text>
         </view>
     </view>
+    <!-- 底部按钮 -->
     <view class="leo-btn">
         <navigator url="../groupList/groupList" open-type="redirect" hidden="{{fromTitleList}}">
             <button hover-class="button-hover">查看所有类别</button>
         </navigator>
+        <!-- 以下两个逻辑都是为了非分享不用控制路由 -->
         <block wx:if="{{fromShare}}">
             <navigator url="../index/index" open-type="redirect">
-                <button hover-class="button-hover" class="light">关键词搜索</button>
+                <button hover-class="button-hover">关键词搜索</button>
             </navigator>
         </block>
         <block wx:elif="{{fromTitleList}}">
             <navigator delta="666" open-type="navigateBack">
-                <button hover-class="button-hover" class="light">关键词搜索</button>
+                <button hover-class="button-hover">关键词搜索</button>
             </navigator>
         </block>
-        <!-- 以上两个逻辑都是为了非分享不用控制路由 -->
     </view>
 </view>

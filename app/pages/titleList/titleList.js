@@ -4,22 +4,21 @@ const Util = require('../../utils/util.js');
 var app = getApp()
 Page({
     data: {
-        index: 0, // 当前显示的标题列表的下标
+        index: null, // 当前显示的标题列表的下标
         titleData: titleData
     },
     onLoad: function(option) {
-        let index = option.index;
+        let index = option.index,
+            title = option.title || '类目';
+
         this.setData({
             index: index
         });
-    },
-    // 定义转发
-    onShareAppMessage: Util.shareConfig,
-    onLoad(option = {}) {
-        let title = option.title || '类目';
 
         wx.setNavigationBarTitle({
             title: title
         });
-    }
+    },
+    // 定义转发
+    onShareAppMessage: Util.shareConfig
 });
