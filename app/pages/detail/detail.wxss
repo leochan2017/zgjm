@@ -7,7 +7,7 @@ image.blur {
 
 .detail-body {
     width: 100%;
-    min-height: 780rpx;
+    min-height: 920rpx;
     font-size: 34rpx;
     margin-top: 40rpx;
     margin-bottom: 60rpx;

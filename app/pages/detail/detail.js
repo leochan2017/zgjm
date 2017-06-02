@@ -54,7 +54,7 @@ Page({
     },
     onLoad: function(option) {
         this.setData({
-            searchKey: option.key || 'Leo'
+            searchKey: option.key || '死人'
         });
 
         option.fromTitleList && this.setData({
