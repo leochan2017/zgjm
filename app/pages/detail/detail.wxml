@@ -12,7 +12,7 @@
     <!-- 没有搜到结果 -->
     <view wx:else class="fail-body">
         <view>
-            <icon type="warn" size="80"></icon>
+            <icon type="warn" size="80" color="#e64340"></icon>
         </view>
         <view class="detail-body-item">
             <text>周公: 暂无与"{{searchKey}}"相关的解梦</text>
@@ -20,7 +20,7 @@
     </view>
     <!-- 底部按钮 -->
     <view class="leo-btn">
-        <navigator url="../groupList/groupList" open-type="redirect" hidden="{{fromTitleList}}">
+        <navigator url="../groupList/groupList" open-type="{{fromShare ? 'navigate' : 'redirect'}}" hidden="{{fromTitleList}}">
             <button hover-class="button-hover">查看所有类别</button>
         </navigator>
         <!-- 以下两个逻辑都是为了非分享不用控制路由 -->

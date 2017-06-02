@@ -7,7 +7,7 @@ image.blur {
 
 .detail-body {
     width: 100%;
-    min-height: 920rpx;
+    min-height: 914rpx;
     font-size: 34rpx;
     margin-top: 40rpx;
     margin-bottom: 60rpx;
@@ -33,7 +33,7 @@ image.blur {
 
 .fail-body {
     width: 100%;
-    min-height: 780rpx;
+    min-height: 890rpx;
     text-align: center;
     margin-top: 90rpx;
     margin-bottom: 60rpx;
