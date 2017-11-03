@@ -4,14 +4,24 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.0.3</text>
+            <text>周公解梦境 v1.0.4</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
         </view>
-        <view>
-            <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">打赏作者
-            </button>
+        <view class="payButton">
+            <view>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">微信打赏
+                </button>
+            </view>
+            <view hidden="{{!canUseSetClipboardData}}">
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeBtc">BTC打赏
+                </button>
+            </view>
+            <view hidden="{{!canUseSetClipboardData}}">
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeEth">ETH打赏(ERC20系列)
+                </button>
+            </view>
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">

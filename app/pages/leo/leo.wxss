@@ -30,3 +30,7 @@
     color: #888;
     margin-bottom: 70rpx;
 }
+
+.payButton {
+    line-height: 80rpx;
+}
