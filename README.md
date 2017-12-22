@@ -1,8 +1,7 @@
-# zgjm
-小程序: 周公解梦境
+# 微信小程序: 周公解梦境
 
 
-# QR CODE
+# 扫码体验
 ![QR CODE](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/logo/gh_54e23eb8715a_258.jpg?raw=true)
 
 
@@ -20,8 +19,9 @@
 ![截图4](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/%E6%88%AA%E5%9B%BE/4.png?raw=true)
 
 
+# 下面的忽略，作者用。。。
 
-# 提取组集合
+### 提取组集合
 
 ```
 var arr = [];
@@ -34,7 +34,7 @@ for (i of dreamsData) {
 
 ```
 
-# 提取标题集合
+### 提取标题集合
 
 ```
 
