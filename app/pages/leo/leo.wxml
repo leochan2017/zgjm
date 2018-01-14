@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.0.4</text>
+            <text>周公解梦境 v1.0.5</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
@@ -32,7 +32,7 @@
             如果你有好的意见或建议, 欢迎给我:
         </view>
         <view class="weui-footer__text">
-            Email: Leochan2017@gmail.com
+            https://github.com/leochan2017/zgjm
         </view>
     </view>
 </view>
