@@ -3,7 +3,6 @@
 
 ## 周公解梦境 for 微信小程序
 ![By Leo](https://img.shields.io/badge/Powered_by-Leo-red.svg?style=flat) 
-![Libscore](https://img.shields.io/libscore/s/jQuery.svg?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/leochan2017/zgjm.svg)
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
