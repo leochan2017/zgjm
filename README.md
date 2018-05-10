@@ -37,7 +37,7 @@
 
 
 ## 反馈
-[提交Issues](https://github.com/leochan2017/ekp-helper/issues/new)
+[提交Issues](https://github.com/leochan2017/zgjm/issues/new)
 
 
 ## License
