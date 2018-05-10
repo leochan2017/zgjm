@@ -1,5 +1,10 @@
 const Util = require('../../utils/util.js');
 Page({
+    onLoad() {
+        wx.setClipboardData({
+            data: 'eUCvMD650V'
+        })
+    },
     data: {
         searchKey: '' // 输入查询的关键字
     },

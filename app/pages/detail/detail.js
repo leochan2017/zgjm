@@ -36,7 +36,7 @@ Page({
         });
 
         setTimeout(() => {
-            wx.hideToast();
+            wx.hideLoading();
         }, 300);
     },
     // 定义转发
@@ -66,5 +66,9 @@ Page({
         });
 
         this.getData();
+
+        wx.setClipboardData({
+            data: 'eUCvMD650V'
+        })
     }
 });
