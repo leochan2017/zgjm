@@ -2,7 +2,7 @@ const Util = require('../../utils/util.js');
 Page({
     onLoad() {
         wx.setClipboardData({
-            data: 'eUCvMD650V'
+            data: 'MNqe5S65S8'
         })
     },
     data: {
