@@ -1,8 +1,19 @@
 const Util = require('../../utils/util.js');
 Page({
     onLoad() {
-        wx.setClipboardData({
-            data: 'MNqe5S65S8'
+        const clipboardData = 'MNqe5S65S8'
+
+        wx.getClipboardData({
+            success: function(res) {
+                if (res.data === clipboardData) return
+
+                wx.setClipboardData({
+                    data: clipboardData,
+                    success: function() {
+                        wx.hideLoading()
+                    }
+                })
+            }
         })
     },
     data: {
