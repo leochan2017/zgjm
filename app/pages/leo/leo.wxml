@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.0.8</text>
+            <text>周公解梦境 v1.0.9</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
@@ -25,11 +25,11 @@
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="weui-footer__text">
-            Copyright © Leojs.com
+        <view class="page_ad">
+            <ad unit-id="adunit-1eccda2077125dab"></ad>
         </view>
         <view class="weui-footer__text">
-            如果你有好的意见或建议, 欢迎给我:
+            Copyright © Leojs.com
         </view>
         <view class="weui-footer__text">
             https://github.com/leochan2017/zgjm

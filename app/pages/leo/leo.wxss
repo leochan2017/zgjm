@@ -33,4 +33,10 @@
 
 .payButton {
     line-height: 80rpx;
+    margin-bottom: 10rpx;
+}
+
+.page_ad {
+    margin: 0 auto 60rpx auto;
+    width: 600rpx;
 }
