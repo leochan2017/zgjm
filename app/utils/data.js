@@ -1,4 +1,14 @@
 let dreamsData = [{
+    "id": "-1",
+    "group": "人物类",
+    "title": "Leo",
+    "detail": "梦到我就给我打赏呀，哼~!"
+}, {
+    "id": "0",
+    "group": "人物类",
+    "title": "leo",
+    "detail": "梦到我就给我打赏呀，哼~!"
+}, {
     "id": "1",
     "group": "自然类",
     "title": "泥巴",
