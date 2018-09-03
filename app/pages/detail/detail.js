@@ -7,7 +7,8 @@ Page({
         isLoading: true,
         searchKey: '', // 输入查询的关键字
         results: [], // 找寻到的列表
-        datas: datas.dreamsData
+        datas: datas.dreamsData,
+        minWrapHeight: 900
     },
     // 查询数据库
     getData() {
@@ -39,6 +40,20 @@ Page({
             wx.hideLoading();
         }, 300);
     },
+    // 自动计算撑开页面的内容区高度
+    resetWrapMinHeight: function() {
+        wx.getSystemInfo({
+            success: res => {
+                const windowHeight = res.windowHeight
+                // console.log('windowHeight', windowHeight)
+                if (windowHeight) {
+                    const minWrapHeight = windowHeight - 190
+                    // console.log('minWrapHeight', minWrapHeight)
+                    this.setData({ minWrapHeight })
+                }
+            }
+        })
+    },
     // 定义转发
     onShareAppMessage: function() {
         // 如果没有查到任何内容则分享首页吧
@@ -53,6 +68,8 @@ Page({
         }
     },
     onLoad: function(option) {
+        this.resetWrapMinHeight()
+
         this.setData({
             searchKey: option.key || '大风'
         });
