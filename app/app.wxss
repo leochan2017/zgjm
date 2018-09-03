@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    color: #888;
+    color: #eee;
     /*position: relative;*/
     /*z-index: 2;*/
 }
@@ -35,7 +35,7 @@
 
 .leo-btn button {
     width: 520rpx;
-    margin-top: 40rpx;
+    /*margin-top: 40rpx;*/
     height: 80rpx;
     line-height: 80rpx;
     background-color: #222;
@@ -69,7 +69,7 @@ Page {
 /*一些公用的修改weui的class*/
 
 .leo-content-font {
-    color: #888;
+    color: #eee;
 }
 
 .leo-border {

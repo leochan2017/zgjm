@@ -7,18 +7,16 @@ image.blur {
 
 .detail-body {
     width: 100%;
-    min-height: 910rpx;
+    /*min-height: 900rpx;*/
     font-size: 34rpx;
     margin-top: 40rpx;
     margin-bottom: 60rpx;
-    color: #888;
 }
 
 .detail-body-title {
     text-align: center;
     font-weight: 900;
     font-size: 40rpx;
-    color: #888;
 }
 
 .detail-body-item {
@@ -38,8 +36,8 @@ image.blur {
     margin-top: 90rpx;
     margin-bottom: 60rpx;
     line-height: 90rpx;
-    color: #888;
 }
+
 
 /*Page {
     background-color: #465061;

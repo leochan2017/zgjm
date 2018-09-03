@@ -1,7 +1,7 @@
 <image class="background-image blur" src="../../images/bg1.png"></image>
 <view class="container page-body" hidden="{{isLoading}}">
     <!-- 搜到结果 -->
-    <view class="detail-body" wx:if="{{results.length > 0}}">
+    <view class="detail-body" style="min-height: {{ minWrapHeight }}px" wx:if="{{results.length > 0}}">
         <view class="detail-body-title">
             <text>{{searchKey}}</text>
         </view>
@@ -36,8 +36,8 @@
         </block>
     </view>
     <view class="weui-footer" hidden="{{results.length == 0}}">
-        <view class="weui-footer__text">
-            你可以通过右上角转发本页结果
+        <view class="weui-footer__text leo-btn">
+            <button hover-class="button-hover" open-type="share" plain>转发本页结果</button>
         </view>
     </view>
 </view>
