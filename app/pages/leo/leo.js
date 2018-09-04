@@ -1,17 +1,14 @@
-const Util = require('../../utils/util.js');
+const Util = require('../../utils/util.js')
 Page({
     data: {
         canUseSetClipboardData: wx.canIUse('setClipboardData')
     },
     payMeMoney() {
-        wx.previewImage({
-            urls: ['http://www.leojs.com/pay-me-money.jpg']
-        });
+        // wx.navigateTo({ url: 'pages/apps/largess/detail?accountId=33905' })
+        wx.previewImage({ urls: ['http://www.leojs.com/pay-me-money.jpg'] })
     },
     onLoad() {
-        wx.setNavigationBarTitle({
-            title: '关于'
-        });
+        wx.setNavigationBarTitle({ title: '关于' })
     },
     // 定义转发
     onShareAppMessage: Util.shareConfig,
@@ -24,17 +21,15 @@ Page({
                     content: 'BTC钱包收款地址已经复制至您的手机剪切板',
                     showCancel: false,
                     confirmText: '好的'
-                });
+                })
 
                 wx.setStorage({
                     key: 'isPayLeoMoney',
                     data: true
-                });
+                })
             },
             fail: err => {
-                wx.showToast({
-                    title: '复制失败，请重试'
-                });
+                wx.showToast({ title: '复制失败，请重试' })
             }
         })
     },
@@ -47,18 +42,16 @@ Page({
                     content: 'imtoken钱包收款地址已经复制至您的手机剪切板',
                     showCancel: false,
                     confirmText: '好的'
-                });
+                })
 
                 wx.setStorage({
                     key: 'isPayLeoMoney',
                     data: true
-                });
+                })
             },
             fail: err => {
-                wx.showToast({
-                    title: '复制失败，请重试'
-                });
+                wx.showToast({ title: '复制失败，请重试' })
             }
         })
     }
-});
+})

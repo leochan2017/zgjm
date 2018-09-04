@@ -1,5 +1,5 @@
-const groupData = require('../../utils/groupData.js');
-const Util = require('../../utils/util.js');
+const groupData = require('../../utils/groupData.js')
+const Util = require('../../utils/util.js')
 
 Page({
     data: {
@@ -8,8 +8,6 @@ Page({
     // 定义转发
     onShareAppMessage: Util.shareConfig,
     onLoad() {
-        wx.setNavigationBarTitle({
-            title: '梦境类别'
-        });
+        wx.setNavigationBarTitle({ title: '梦境类别' })
     }
-});
+})

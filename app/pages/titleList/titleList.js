@@ -1,5 +1,5 @@
-const titleData = require('../../utils/titleData.js');
-const Util = require('../../utils/util.js');
+const titleData = require('../../utils/titleData.js')
+const Util = require('../../utils/util.js')
 
 var app = getApp()
 Page({
@@ -9,16 +9,12 @@ Page({
     },
     onLoad: function(option) {
         let index = option.index,
-            title = option.title || '类目';
+            title = option.title || '类目'
 
-        this.setData({
-            index: index
-        });
+        this.setData({ index: index })
 
-        wx.setNavigationBarTitle({
-            title: title
-        });
+        wx.setNavigationBarTitle({ title: title })
     },
     // 定义转发
     onShareAppMessage: Util.shareConfig
-});
+})
