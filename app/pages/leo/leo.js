@@ -4,8 +4,13 @@ Page({
         canUseSetClipboardData: wx.canIUse('setClipboardData')
     },
     payMeMoney() {
-        // wx.navigateTo({ url: 'pages/apps/largess/detail?accountId=33905' })
-        wx.previewImage({ urls: ['http://www.leojs.com/pay-me-money.jpg'] })
+        wx.navigateToMiniProgram({
+            appId: 'wx18a2ac992306a5a4',
+            path: 'pages/apps/largess/detail?id=cII2eMPUxog%3D',
+            fail: err => {
+                wx.previewImage({ urls: ['http://www.leojs.com/pay-me-money.jpg'] })
+            }
+        })
     },
     onLoad() {
         wx.setNavigationBarTitle({ title: '关于' })

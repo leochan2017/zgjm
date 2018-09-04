@@ -11,6 +11,8 @@
         </view>
         <view class="payButton">
             <view>
+                <!-- 这个能用的，只是还没调样式，先用navigateToMiniProgram的API吧 -->
+                <!-- <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/apps/largess/detail?id=cII2eMPUxog%3D">微信打赏</navigator> -->
                 <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">微信打赏</button>
             </view>
             <view hidden="{{!canUseSetClipboardData}}">
