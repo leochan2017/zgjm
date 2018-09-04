@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.1.0</text>
+            <text>周公解梦境 v1.1.1</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
