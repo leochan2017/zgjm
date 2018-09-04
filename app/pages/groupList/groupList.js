@@ -8,6 +8,8 @@ Page({
     // 定义转发
     onShareAppMessage: Util.shareConfig,
     onLoad() {
-        wx.setNavigationBarTitle({ title: '梦境类别' })
+        wx.setNavigationBarTitle({
+            title: '梦境类别'
+        })
     }
 })

@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.1.2</text>
+            <text>周公解梦境 v1.1.3</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
@@ -19,13 +19,16 @@
                 <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeBtc">BTC打赏</button>
             </view>
             <view hidden="{{!canUseSetClipboardData}}">
-                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeEth">ETH打赏(ERC20系列)</button>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeEth">ETH打赏（ERC20系列也可以）</button>
             </view>
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="page_ad">
             <ad unit-id="adunit-1eccda2077125dab"></ad>
+        </view>
+        <view class="weui-footer__text leo-footer">
+            <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/miniApps/miniApps">更多好玩 >></navigator>
         </view>
         <view class="weui-footer__text">
             Copyright © Leojs.com

@@ -8,8 +8,6 @@
     justify-content: space-between;
     box-sizing: border-box;
     color: #eee;
-    /*position: relative;*/
-    /*z-index: 2;*/
 }
 
 .page-body {
@@ -100,7 +98,6 @@ Page {
 .leo-footer {
     text-decoration: underline;
 }
-
 
 .mb20 {
     margin-bottom: 20rpx;

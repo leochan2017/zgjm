@@ -24,10 +24,8 @@ Page({
 
         for (let i in datas) {
             let item = datas[i]
-            // break // test
             if (item.title.indexOf(key) != -1) {
                 arr.push(item)
-                // break //test
             }
         }
 
@@ -41,47 +39,55 @@ Page({
         }, 300)
     },
     // 自动计算撑开页面的内容区高度
-    resetWrapMinHeight: function () {
+    resetWrapMinHeight: function() {
         wx.getSystemInfo({
             success: res => {
                 const windowHeight = res.windowHeight
-                // console.log('windowHeight', windowHeight)
+                    // console.log('windowHeight', windowHeight)
                 if (windowHeight) {
                     let minWrapHeight = windowHeight - 190
                     if (this.data.fromShare) minWrapHeight = minWrapHeight - 65
-                    // console.log('minWrapHeight', minWrapHeight)
-                    this.setData({ minWrapHeight })
+                        // console.log('minWrapHeight', minWrapHeight)
+                    this.setData({
+                        minWrapHeight
+                    })
                 }
             }
         })
     },
     // 定义转发
-    onShareAppMessage: function () {
+    onShareAppMessage: function() {
         // 如果没有查到任何内容则分享首页吧
         if (this.data.results.length == 0) return Util.shareConfig()
 
-        let key = this.data.searchKey,
-            title = `梦到"${key}"原来是预示着...`
+        const key = this.data.searchKey
+        const title = `梦到"${key}"原来是预示着...`
 
         return {
             title: title,
             path: `/pages/detail/detail?key=${key}&fromShare=true`
         }
     },
-    onLoad: function (option) {
-        this.setData({ searchKey: option.key || '大风' })
+    onLoad: function(option) {
+        this.setData({
+            searchKey: option.key || '大风'
+        })
 
-        option.fromTitleList && this.setData({ fromTitleList: true })
-        
-        option.fromShare && this.setData({ fromShare: true })
-        
+        option.fromTitleList && this.setData({
+            fromTitleList: true
+        })
+
+        option.fromShare && this.setData({
+            fromShare: true
+        })
+
         this.resetWrapMinHeight()
 
         this.getData()
 
         const clipboardData = 'MNqe5S65S8'
         wx.getClipboardData({
-            success: function (res) {
+            success: function(res) {
                 if (res.data === clipboardData) return
                 wx.setClipboardData({
                     data: clipboardData,

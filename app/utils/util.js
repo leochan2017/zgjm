@@ -4,17 +4,13 @@
  * @param  {String} path   [Path]
  * @return {Object}        [Share Config]
  */
-let shareConfig = (option = {}) => {
-    let title = '来查查你的梦在预示着什么?',
-        path = '/pages/index/index';
+const shareConfig = (option = {}) => {
+    let title = '来查查你的梦在预示着什么?'
+    let path = '/pages/index/index'
 
-    if (option.title && option.title != '') {
-        title = option.title;
-    }
+    if (option.title && option.title != '') title = option.title
 
-    if (option.path && option.path != '') {
-        path = option.path;
-    }
+    if (option.path && option.path != '') path = option.path
 
     return {
         title: title,
@@ -24,4 +20,4 @@ let shareConfig = (option = {}) => {
 
 module.exports = {
     shareConfig: shareConfig
-};
+}
