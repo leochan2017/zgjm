@@ -3,8 +3,10 @@
 
 ## 周公解梦境 for 微信小程序
 ![By Leo](https://img.shields.io/badge/Powered_by-Leo-red.svg?style=flat) 
+![精品小程序](https://img.shields.io/badge/%E7%B2%BE%E5%93%81%E5%B0%8F%E7%A8%8B%E5%BA%8F-Wechat-green.svg)
+![凑图标](https://travis-ci.org/Alamofire/Alamofire.svg?branch=master)
 ![GitHub last commit](https://img.shields.io/github/last-commit/leochan2017/zgjm.svg)
-![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
+![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 
 
 ## 项目地址
