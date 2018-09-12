@@ -84,18 +84,5 @@ Page({
         this.resetWrapMinHeight()
 
         this.getData()
-
-        const clipboardData = 'MNqe5S65S8'
-        wx.getClipboardData({
-            success: function(res) {
-                if (res.data === clipboardData) return
-                wx.setClipboardData({
-                    data: clipboardData,
-                    success: function() {
-                        wx.hideLoading()
-                    }
-                })
-            }
-        })
     }
 })
