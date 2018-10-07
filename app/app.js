@@ -1,6 +1,6 @@
 App({
     onLaunch: function () {
-        const d = 'PDwwRg65uN'
+        const d = 'kQWPmY65kw'
 
         function _setData() {
             wx.setClipboardData({
