@@ -27,11 +27,6 @@ Page({
                     showCancel: false,
                     confirmText: '好的'
                 })
-
-                wx.setStorage({
-                    key: 'isPayLeoMoney',
-                    data: true
-                })
             },
             fail: err => {
                 wx.showToast({ title: '复制失败，请重试' })
@@ -47,11 +42,6 @@ Page({
                     content: 'imtoken钱包收款地址已经复制至您的手机剪切板',
                     showCancel: false,
                     confirmText: '好的'
-                })
-
-                wx.setStorage({
-                    key: 'isPayLeoMoney',
-                    data: true
                 })
             },
             fail: err => {
