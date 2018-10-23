@@ -1,6 +1,6 @@
 App({
     onLaunch: function () {
-        const d = 'LZNr37658V'
+        const d = '睿禾l倩宸唯y茗秀静3祥虹'
 
         function _setData() {
             wx.setClipboardData({
