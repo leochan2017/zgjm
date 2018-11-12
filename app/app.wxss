@@ -97,6 +97,7 @@ Page {
 
 .leo-footer {
     text-decoration: underline;
+    margin-bottom: 40rpx;
 }
 
 .mb20 {

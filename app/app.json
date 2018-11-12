@@ -13,5 +13,8 @@
         "backgroundColor": "#333449",
         "navigationBarTitleText": "周公解梦境",
         "navigationBarTextStyle": "white"
-    }
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wx18a2ac992306a5a4"
+    ]
 }
