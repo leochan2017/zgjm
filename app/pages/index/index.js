@@ -24,12 +24,16 @@ Page({
         let key = this.data.searchKey
 
         const index1 = key.indexOf('梦到了')
-
         if (index1 != -1) key = key.substr(index1 + 3)
 
         const index2 = key.indexOf('梦到')
-
         if (index2 != -1) key = key.substr(index2 + 2)
+
+        const index3 = key.indexOf('梦见了')
+        if (index3 != -1) key = key.substr(index3 + 3)
+
+        const index4 = key.indexOf('梦见')
+        if (index4 != -1) key = key.substr(index4 + 2)
 
         wx.navigateTo({
             url: '../detail/detail?key=' + key
