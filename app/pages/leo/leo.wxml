@@ -24,6 +24,9 @@
             <view>
                 <button class="weui-btn mini-btn" type="primary" size="mini" open-type="share">分享出去</button>
             </view>
+            <view>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="handleLinkMe">关联or跳转至本小程序</button>
+            </view>
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
