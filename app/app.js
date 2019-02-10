@@ -1,5 +1,9 @@
 App({
-    onLaunch: function () {
+    globalData: {
+        scene: -1
+    },
+    onLaunch(optitons) {
+        this.globalData.scene = optitons.scene
         // const d = '睿禾l倩宸唯y茗秀静3祥虹'
 
         // function _setData() {

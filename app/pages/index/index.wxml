@@ -1,3 +1,4 @@
+<leo-notice-bar icon="systemprompt" loop closable>点击右上角 •●• 然后 “添加到我的小程序” 使用更方便哦。</leo-notice-bar>
 <image class="background-image" src="../../images/bg1.png"></image>
 <view class="container">
     <view class="search-body">
@@ -8,9 +9,7 @@
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="weui-footer__text leo-footer">
-            <navigator url="../leo/leo" hover-class="navigator-hover">
-                关于
-            </navigator>
+            <navigator url="../leo/leo" hover-class="navigator-hover">关于</navigator>
         </view>
     </view>
 </view>

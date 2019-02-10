@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.2.0</text>
+            <text>周公解梦境 v1.2.1</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
@@ -13,7 +13,9 @@
             <view>
                 <!-- 这个能用的，只是还没调样式，先用navigateToMiniProgram的API吧 -->
                 <!-- <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/apps/largess/detail?id=cII2eMPUxog%3D">微信打赏</navigator> -->
-                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">微信打赏</button>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">
+                    微信打赏
+                </button>
             </view>
             <!-- <view hidden="{{!canUseSetClipboardData}}">
                 <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeBtc">BTC打赏</button>
@@ -22,10 +24,14 @@
                 <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeEth">ETH打赏（ERC20系列也可以）</button>
             </view> -->
             <view>
-                <button class="weui-btn mini-btn" type="primary" size="mini" open-type="share">分享出去</button>
+                <button class="weui-btn mini-btn" type="primary" size="mini" open-type="share">
+                    分享出去
+                </button>
             </view>
             <view>
-                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="handleLinkMe">关联or跳转至本小程序</button>
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="handleLinkMe">
+                    关联or跳转至本小程序
+                </button>
             </view>
         </view>
     </view>
@@ -34,13 +40,11 @@
             <ad unit-id="adunit-1eccda2077125dab"></ad>
         </view>
         <view class="weui-footer__text leo-footer">
-            <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/miniApps/miniApps">更多好玩 >></navigator>
+            <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/miniApps/miniApps">
+                更多好玩 >>
+            </navigator>
         </view>
-        <view class="weui-footer__text">
-            Copyright © Leojs.com
-        </view>
-        <view class="weui-footer__text">
-            https://github.com/leochan2017/zgjm
-        </view>
+        <view class="weui-footer__text">Copyright © Leojs.com</view>
+        <view class="weui-footer__text">https://github.com/leochan2017/zgjm</view>
     </view>
 </view>
