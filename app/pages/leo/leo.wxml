@@ -39,12 +39,7 @@
         <view class="page_ad">
             <ad unit-id="adunit-1eccda2077125dab"></ad>
         </view>
-        <view class="weui-footer__text leo-footer">
-            <navigator open-type="navigate" target="miniProgram" app-id="wx18a2ac992306a5a4" path="pages/miniApps/miniApps">
-                更多好玩 >>
-            </navigator>
-        </view>
-        <view class="weui-footer__text">Copyright © Leojs</view>
+        <view class="weui-footer__text">Copyright © Leo</view>
         <view class="weui-footer__text">https://github.com/leochan2017/zgjm</view>
     </view>
 </view>
