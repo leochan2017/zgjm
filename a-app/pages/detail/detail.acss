@@ -1,0 +1,44 @@
+/*背景模糊*/
+
+image.blur {
+    /*filter: url(blur.svg#blur);*/
+    /*-webkit-filter: blur(10px);*/
+}
+
+.detail-body {
+    width: 100%;
+    /*min-height: 900rpx;*/
+    font-size: 34rpx;
+    margin-top: 40rpx;
+    margin-bottom: 60rpx;
+}
+
+.detail-body-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40rpx;
+}
+
+.detail-body-item {
+    padding: 0 40rpx;
+    line-height: 50rpx;
+    margin-top: 40rpx;
+    font-size: 34rpx;
+}
+
+
+/*失败界面*/
+
+.fail-body {
+    width: 100%;
+    min-height: 890rpx;
+    text-align: center;
+    margin-top: 90rpx;
+    margin-bottom: 60rpx;
+    line-height: 90rpx;
+}
+
+
+/*Page {
+    background-color: #465061;
+}*/

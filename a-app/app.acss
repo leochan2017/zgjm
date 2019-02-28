@@ -1,0 +1,110 @@
+@import './weui.acss';
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: #eee;
+}
+
+.comm-relative {
+    position: relative;
+}
+
+.page-body {
+    color: #fff;
+    font-size: 40rpx;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+/*leo共用按钮*/
+
+.leo-btn {
+    margin-bottom: 40rpx;
+}
+
+.leo-btn button {
+    width: 520rpx;
+    height: 80rpx;
+    border: none;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a2ff;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    position: relative;
+    cursor: pointer;
+}
+
+.leo-btn button.empty {
+    color: #656b79;
+    background-color: #f6f8fa;
+    /*box-shadow: 0 0 1px #b8bbbf;*/
+}
+
+.button-hover {
+    background-color: #007d9a!important;
+}
+
+.leo-btn button.light {
+    background-color: #b2b2b2!important;
+}
+
+page {
+    color: #7F8A9F;
+    background-color: #34354a;
+}
+
+
+/*一些公用的修改weui的class*/
+
+.leo-content-font {
+    color: #eee;
+}
+
+.leo-border {
+    border-color: #b2b2b2;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.leo-border-item {
+    border-color: #b2b2b2;
+    border-right: 0;
+    border-top: 0;
+    width: 25%;
+    padding-bottom: 10rpx;
+    margin: 0 30rpx;
+}
+
+.leo-title {
+    text-align: center;
+    margin: 40rpx auto;
+    font-size: 40rpx;
+}
+
+.leo-footer {
+    text-decoration: underline;
+    margin-bottom: 40rpx;
+}
+
+.mb20 {
+    margin-bottom: 20rpx;
+}

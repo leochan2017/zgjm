@@ -1,0 +1,6 @@
+/*列表页两栏排版*/
+
+.leo-border-item {
+    width: 35%;
+    margin: 0 56rpx;
+}

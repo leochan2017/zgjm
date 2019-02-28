@@ -44,7 +44,7 @@
                 更多好玩 >>
             </navigator>
         </view>
-        <view class="weui-footer__text">Copyright © Leojs.com</view>
+        <view class="weui-footer__text">Copyright © Leojs</view>
         <view class="weui-footer__text">https://github.com/leochan2017/zgjm</view>
     </view>
 </view>
