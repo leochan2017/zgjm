@@ -9,7 +9,7 @@ Page({
       path: 'pages/apps/largess/detail?id=cII2eMPUxog%3D',
       fail: err => {
         wx.previewImage({
-          urls: ['http://www.leojs.com/pay-me-money.jpg']
+          urls: ['https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/pay-me-money.jpg?raw=true']
         })
       }
     })
@@ -21,42 +21,42 @@ Page({
   },
   // 定义转发
   onShareAppMessage: Util.shareConfig,
-  payMeBtc() {
-    wx.setClipboardData({
-      data: '1PQg7wJNMVa3wZxtrMJiFmcHrQicsDtpsG',
-      success: res => {
-        wx.showModal({
-          title: '感谢您的支持!',
-          content: 'BTC钱包收款地址已经复制至您的手机剪切板',
-          showCancel: false,
-          confirmText: '好的'
-        })
-      },
-      fail: err => {
-        wx.showToast({
-          title: '复制失败，请重试'
-        })
-      }
-    })
-  },
-  payMeEth() {
-    wx.setClipboardData({
-      data: '0xd7EAe8051D4309686c27D96cdE3C41A0ba91c43f',
-      success: res => {
-        wx.showModal({
-          title: '感谢您的支持!',
-          content: 'imtoken钱包收款地址已经复制至您的手机剪切板',
-          showCancel: false,
-          confirmText: '好的'
-        })
-      },
-      fail: err => {
-        wx.showToast({
-          title: '复制失败，请重试'
-        })
-      }
-    })
-  },
+  // payMeBtc() {
+  //   wx.setClipboardData({
+  //     data: '1PQg7wJNMVa3wZxtrMJiFmcHrQicsDtpsG',
+  //     success: res => {
+  //       wx.showModal({
+  //         title: '感谢您的支持!',
+  //         content: 'BTC钱包收款地址已经复制至您的手机剪切板',
+  //         showCancel: false,
+  //         confirmText: '好的'
+  //       })
+  //     },
+  //     fail: err => {
+  //       wx.showToast({
+  //         title: '复制失败，请重试'
+  //       })
+  //     }
+  //   })
+  // },
+  // payMeEth() {
+  //   wx.setClipboardData({
+  //     data: '0xd7EAe8051D4309686c27D96cdE3C41A0ba91c43f',
+  //     success: res => {
+  //       wx.showModal({
+  //         title: '感谢您的支持!',
+  //         content: 'imtoken钱包收款地址已经复制至您的手机剪切板',
+  //         showCancel: false,
+  //         confirmText: '好的'
+  //       })
+  //     },
+  //     fail: err => {
+  //       wx.showToast({
+  //         title: '复制失败，请重试'
+  //       })
+  //     }
+  //   })
+  // },
   // 关联本程序
   handleLinkMe() {
     wx.showModal({
