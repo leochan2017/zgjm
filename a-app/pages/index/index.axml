@@ -1,4 +1,5 @@
 <image class="background-image" src="../../images/bg1.png"></image>
+<favorite>收藏小程序，下次使用更方便</favorite>
 <view class="container">
     <view class="search-body">
         <input type="text" onInput="changeSearchKey" placeholder="告诉周公你梦到了什么" confirm-type="search" onConfirm="searchTap" />

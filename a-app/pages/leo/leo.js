@@ -26,7 +26,7 @@ Page({
         my.showToast({ content: 'BTC钱包收款地址已经复制至您的手机剪切板' })
       },
       fail: err => {
-        my.showToast({ content: '复制失败，请重试' })
+        my.showToast({ content: '复制失败，算了吧。支付宝有bug。' })
       }
     })
   },
@@ -37,7 +37,7 @@ Page({
         my.showToast({ content: 'imtoken钱包收款地址已经复制至您的手机剪切板' })
       },
       fail: err => {
-        my.showToast({ content: '复制失败，请重试' })
+        my.showToast({ content: '复制失败，算了吧。支付宝有bug。' })
       }
     })
   }

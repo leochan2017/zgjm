@@ -1,4 +1,5 @@
 <image class="background-image blur" src="../../images/bg1.png"></image>
+<favorite>收藏小程序，下次使用更方便</favorite>
 <view class="container page-body comm-relative" hidden="{{isLoading}}">
     <!-- 搜到结果 -->
     <view class="detail-body" style="min-height: {{ minWrapHeight }}px" a:if="{{results.length > 0}}">
