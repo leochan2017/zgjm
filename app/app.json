@@ -1,22 +1,23 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/detail/detail",
-        "pages/groupList/groupList",
-        "pages/titleList/titleList",
-        "pages/leo/leo"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarTextStyle": "white",
-        "navigationBarBackgroundColor": "#0E1327",
-        "backgroundColor": "#333449",
-        "navigationBarTitleText": "周公解梦境"
-    },
-    "navigateToMiniProgramAppIdList": [
-        "wx18a2ac992306a5a4"
-    ],
-    "usingComponents": {
-        "leo-notice-bar": "./lib/leo-notice-bar/index"
-    }
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/groupList/groupList",
+    "pages/titleList/titleList",
+    "pages/leo/leo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0E1327",
+    "backgroundColor": "#333449",
+    "navigationBarTitleText": "周公解梦境"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx18a2ac992306a5a4"
+  ],
+  "usingComponents": {
+    "leo-notice-bar": "./lib/leo-notice-bar/index"
+  },
+  "sitemapLocation": "sitemap.json"
 }

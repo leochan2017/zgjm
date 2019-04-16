@@ -41,11 +41,8 @@ Page({
     },
     // 搜索内容变动
     changeSearchKey(e) {
-        const val = e.detail.value
-
-        this.setData({
-            searchKey: val
-        })
+        const searchKey = e.detail.value
+        this.setData({ searchKey })
     },
     // 定义转发
     onShareAppMessage: Util.shareConfig

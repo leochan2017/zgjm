@@ -3,8 +3,8 @@
 <view class="container">
     <view class="search-body">
         <input type="text" bindinput="changeSearchKey" placeholder="告诉周公你梦到了什么" confirm-type="search" bindconfirm="searchTap" />
-        <view class="search-body-icon">
-            <image bindtap="searchTap" src="../../images/search-btn.png"></image>
+        <view class="search-body-icon" bindtap="searchTap">
+            <image src="../../images/search-btn.png"></image>
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">

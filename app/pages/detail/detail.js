@@ -1,5 +1,6 @@
 const datas = require('../../utils/data.js')
 const Util = require('../../utils/util.js')
+const APP = getApp()
 Page({
     data: {
         fromTitleList: false,
@@ -39,15 +40,15 @@ Page({
         }, 300)
     },
     // 自动计算撑开页面的内容区高度
-    resetWrapMinHeight: function() {
+    resetWrapMinHeight: function () {
         wx.getSystemInfo({
             success: res => {
                 const windowHeight = res.windowHeight
-                    // console.log('windowHeight', windowHeight)
+                // console.log('windowHeight', windowHeight)
                 if (windowHeight) {
                     let minWrapHeight = windowHeight - 190
                     if (this.data.fromShare) minWrapHeight = minWrapHeight - 65
-                        // console.log('minWrapHeight', minWrapHeight)
+                    // console.log('minWrapHeight', minWrapHeight)
                     this.setData({
                         minWrapHeight
                     })
@@ -56,7 +57,7 @@ Page({
         })
     },
     // 定义转发
-    onShareAppMessage: function() {
+    onShareAppMessage: function () {
         // 如果没有查到任何内容则分享首页吧
         if (this.data.results.length == 0) return Util.shareConfig()
 
@@ -68,7 +69,7 @@ Page({
             path: `/pages/detail/detail?key=${key}&fromShare=true`
         }
     },
-    onLoad: function(option) {
+    onLoad: function (option) {
         this.setData({
             searchKey: option.key || '大风'
         })
@@ -84,5 +85,21 @@ Page({
         this.resetWrapMinHeight()
 
         this.getData()
+
+        this.showAdDialog()
+    },
+    /** 展示激励式广告 */
+    showAdDialog() {
+        if (APP.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
+            let videoAd = wx.createRewardedVideoAd({
+                adUnitId: 'adunit-ff76dd10ecad5eba'
+            })
+
+            if (typeof videoAd.load === 'function') {
+                videoAd.load()
+                    .then(() => videoAd.show())
+                    .catch(err => console.log(err.errMsg))
+            }
+        }
     }
 })

@@ -10,10 +10,12 @@
 		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.1",
+	"libVersion": "2.2.5",
 	"appid": "wxb30c12d2e291b24b",
 	"projectname": "%E5%91%A8%E5%85%AC%E8%A7%A3%E6%A2%A6%E5%A2%83",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

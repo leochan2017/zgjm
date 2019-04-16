@@ -31,6 +31,10 @@
     height: 76rpx;
     margin-top: -30rpx;
     line-height: 76rpx;
+    text-align: center;
+    width: 70rpx;
+    height: 70rpx;
+    /* border: 1px solid red; */
 }
 
 .search-body-icon image {
