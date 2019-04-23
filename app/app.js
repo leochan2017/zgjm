@@ -5,6 +5,14 @@ App({
         isMore204: true
     },
     onLaunch(optitons) {
+        if (wx.createInterstitialAd) {
+            let intersitialAd = wx.createInterstitialAd({
+                adUnitId: 'adunit-9bedc6aec11d47c0'
+            })
+
+            intersitialAd.show().catch(err => console.log(err.errMsg))
+        }
+
         this.globalData.scene = optitons.scene
 
         try {
@@ -14,7 +22,7 @@ App({
             } else {
                 this.globalData.isMore204 = false
             }
-        } catch (e) { }
+        } catch (e) {}
 
         // const d = '睿禾l倩宸唯y茗秀静3祥虹'
 

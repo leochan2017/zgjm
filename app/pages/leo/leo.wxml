@@ -4,7 +4,7 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.2.3</text>
+            <text>周公解梦境 v1.2.4</text>
         </view>
         <view class="detail">
             <text>By Leo</text>
@@ -35,7 +35,7 @@
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="page_ad">
-            <ad unit-id="adunit-1eccda2077125dab"></ad>
+            <ad unit-id="adunit-b92a9a7e852a4c46"></ad>
         </view>
         <view class="weui-footer__text">Copyright © Leo</view>
     </view>

@@ -86,7 +86,7 @@ Page({
 
         this.getData()
 
-        this.showAdDialog()
+        // this.showAdDialog()
     },
     /** 展示激励式广告 */
     showAdDialog() {
