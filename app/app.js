@@ -5,7 +5,9 @@ App({
         isMore204: true
     },
     onLaunch(optitons) {
-        setTimeout(this.showAdDialog, 800)
+        setTimeout(this.showAdJiLi, 800)
+
+        this.showAdChaPin()
 
         this.globalData.scene = optitons.scene
 
@@ -21,7 +23,7 @@ App({
         // this.initCopyCode()
     },
     /** 展示激励式广告 */
-    showAdDialog() {
+    showAdJiLi() {
         if (this.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
             let videoAd = wx.createRewardedVideoAd({
                 adUnitId: 'adunit-ff76dd10ecad5eba'
@@ -33,17 +35,17 @@ App({
                     .catch(err => console.log(err.errMsg))
             }
         }
-    }
+    },
     /** 展示插屏广告 */
-    // showAdChaPin() {
-    //     if (wx.createInterstitialAd) {
-    //         let intersitialAd = wx.createInterstitialAd({
-    //             adUnitId: 'adunit-9bedc6aec11d47c0'
-    //         })
+    showAdChaPin() {
+        if (wx.createInterstitialAd) {
+            let intersitialAd = wx.createInterstitialAd({
+                adUnitId: 'adunit-9bedc6aec11d47c0'
+            })
 
-    //         intersitialAd.show().catch(err => console.log(err.errMsg))
-    //     }
-    // },
+            intersitialAd.show().catch(err => console.log(err.errMsg))
+        }
+    }
     /** 复制神秘代码 */
     // initCopyCode() {
     // const d = '睿禾l倩宸唯y茗秀静3祥虹'
