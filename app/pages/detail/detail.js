@@ -1,6 +1,6 @@
 const datas = require('../../utils/data.js')
 const Util = require('../../utils/util.js')
-const APP = getApp()
+// const APP = getApp()
 Page({
     data: {
         fromTitleList: false,
@@ -85,21 +85,5 @@ Page({
         this.resetWrapMinHeight()
 
         this.getData()
-
-        // this.showAdDialog()
-    },
-    /** 展示激励式广告 */
-    showAdDialog() {
-        if (APP.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
-            let videoAd = wx.createRewardedVideoAd({
-                adUnitId: 'adunit-ff76dd10ecad5eba'
-            })
-
-            if (typeof videoAd.load === 'function') {
-                videoAd.load()
-                    .then(() => videoAd.show())
-                    .catch(err => console.log(err.errMsg))
-            }
-        }
     }
 })

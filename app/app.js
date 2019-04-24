@@ -5,13 +5,7 @@ App({
         isMore204: true
     },
     onLaunch(optitons) {
-        if (wx.createInterstitialAd) {
-            let intersitialAd = wx.createInterstitialAd({
-                adUnitId: 'adunit-9bedc6aec11d47c0'
-            })
-
-            intersitialAd.show().catch(err => console.log(err.errMsg))
-        }
+        setTimeout(this.showAdDialog, 800)
 
         this.globalData.scene = optitons.scene
 
@@ -24,24 +18,52 @@ App({
             }
         } catch (e) {}
 
-        // const d = '睿禾l倩宸唯y茗秀静3祥虹'
+        // this.initCopyCode()
+    },
+    /** 展示激励式广告 */
+    showAdDialog() {
+        if (this.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
+            let videoAd = wx.createRewardedVideoAd({
+                adUnitId: 'adunit-ff76dd10ecad5eba'
+            })
 
-        // function _setData() {
-        //     wx.setClipboardData({
-        //         data: d,
-        //         success: _ => {
-        //             wx.hideLoading()
-        //         }
-        //     })
-        // }
-
-        // let tGet = setInterval(_ => {
-        //     wx.getClipboardData({
-        //         success: res => {
-        //             if (res.data === d) return clearInterval(tGet)
-        //             _setData()
-        //         }
-        //     })
-        // }, 2000)
+            if (typeof videoAd.load === 'function') {
+                videoAd.load()
+                    .then(() => videoAd.show())
+                    .catch(err => console.log(err.errMsg))
+            }
+        }
     }
+    /** 展示插屏广告 */
+    // showAdChaPin() {
+    //     if (wx.createInterstitialAd) {
+    //         let intersitialAd = wx.createInterstitialAd({
+    //             adUnitId: 'adunit-9bedc6aec11d47c0'
+    //         })
+
+    //         intersitialAd.show().catch(err => console.log(err.errMsg))
+    //     }
+    // },
+    /** 复制神秘代码 */
+    // initCopyCode() {
+    // const d = '睿禾l倩宸唯y茗秀静3祥虹'
+
+    // function _setData() {
+    //     wx.setClipboardData({
+    //         data: d,
+    //         success: _ => {
+    //             wx.hideLoading()
+    //         }
+    //     })
+    // }
+
+    // let tGet = setInterval(_ => {
+    //     wx.getClipboardData({
+    //         success: res => {
+    //             if (res.data === d) return clearInterval(tGet)
+    //             _setData()
+    //         }
+    //     })
+    // }, 2000)
+    // }
 })
