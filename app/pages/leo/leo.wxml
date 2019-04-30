@@ -4,11 +4,11 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.2.6</text>
+            <text>周公解梦境 v1.2.7</text>
         </view>
-        <view class="detail">
+        <!--view class="detail">
             <text>By Leo</text>
-        </view>
+        </view-->
         <view class="payButton">
             <view>
                 <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">
@@ -34,9 +34,6 @@
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="page_ad">
-            <ad unit-id="adunit-b92a9a7e852a4c46"></ad>
-        </view>
-        <view class="weui-footer__text">Copyright © Leo</view>
+        <ad unit-id="adunit-b92a9a7e852a4c46"></ad>
     </view>
 </view>

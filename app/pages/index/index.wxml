@@ -6,6 +6,9 @@
         <view class="search-body-icon" bindtap="searchTap">
             <image src="../../images/search-btn.png"></image>
         </view>
+        <view class="search-body-type">
+            <navigator url="../groupList/groupList" hover-class="navigator-hover">没有头绪？试试分类检索!</navigator>
+        </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="weui-footer__text leo-footer">
