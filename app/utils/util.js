@@ -22,20 +22,44 @@ const shareConfig = (option = {}) => {
 
 /** 展示激励式广告 */
 const showAdJiLi = () => {
-    console.log('来啦老弟')
-    console.log('APP.globalData', APP.globalData)
-    if (APP.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
-        const videoAd = wx.createRewardedVideoAd({
-            adUnitId: 'adunit-ff76dd10ecad5eba'
-        })
+    APP.globalData.debug && console.log('来啦老弟 APP.globalData', APP.globalData)
 
-        if (typeof videoAd.load === 'function') {
-            videoAd
-                .load()
-                .then(() => videoAd.show())
-                .catch(err => console.log(err.errMsg))
+    const today = new Date().getDate()
+
+    /** 展示广告 */
+    function _showAd() {
+        if (APP.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
+            APP.globalData.debug && console.log('展示激励广告')
+            const videoAd = wx.createRewardedVideoAd({
+                adUnitId: 'adunit-ff76dd10ecad5eba'
+            })
+
+            if (typeof videoAd.load === 'function') {
+                videoAd.load().then(() => videoAd.show()).catch(err => console.log(err.errMsg))
+            }
+
+            wx.setStorage({
+                key: 'lastadjili',
+                data: today
+            })
         }
     }
+
+    function _main() {
+        // 先判断今天是否展示过激励广告了
+        try {
+            const lastadjili = wx.getStorageSync('lastadjili')
+            APP.globalData.debug && console.log('lastadjili', lastadjili)
+            APP.globalData.debug && console.log('today', today)
+            if (lastadjili === today) {
+                APP.globalData.debug && console.log('今天看过激励广告了，明天请早')
+            } else {
+                _showAd()
+            }
+        } catch (err) { console.log('wx.getStorageSync error', err) }
+    }
+
+    _main()
 }
 
 /** 展示插屏广告 */
