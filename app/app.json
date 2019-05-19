@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/leo/leo",
     "pages/index/index",
     "pages/detail/detail",
     "pages/groupList/groupList",
-    "pages/titleList/titleList",
-    "pages/leo/leo"
+    "pages/titleList/titleList"
   ],
   "window": {
     "backgroundTextStyle": "light",
