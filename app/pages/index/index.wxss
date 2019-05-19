@@ -49,3 +49,14 @@
   margin-top: 40rpx;
   font-size: 26rpx;
 }
+
+.index-fotter {
+  margin-bottom: 40rpx;
+}
+
+.index-fotter navigator {
+    font-size: 24rpx;
+    display: inline-block;
+    padding: 0 30rpx;
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+<image class="background-image" src="../../images/bg1.png"></image>
+<view class="card-warp" data-appid="wxb30c12d2e291b24b" bindtap="handleCardTap">
+    <i-card title="周公解梦境" thumb="../../images/logo/zgjm-128.png">
+        <view slot="content">翻译了原版周公解梦资料，拥有最全面的数据。</view>
+    </i-card>
+</view>
+<view class="card-warp" data-appid="wx540226fe722e5773" bindtap="handleCardTap">
+    <i-card title="网贷收益计算器" thumb="../../images/logo/wdjsq-128.png">
+        <view slot="content">计算P2P网贷理财的真实收益率和收益。</view>
+    </i-card>
+</view>
+<view class="card-warp" data-appid="wxd14b213ec08339ce" bindtap="handleCardTap">
+    <i-card title="决定" thumb="../../images/logo/jd-128.png">
+        <view slot="content">选择困难症终结者，一个帮你做决定的小程序。</view>
+    </i-card>
+</view>
+<view class="card-warp" data-appid="wx41bab989844cba23" bindtap="handleCardTap">
+    <i-card title="母婴助手" thumb="../../images/logo/yfzs-128.png">
+        <view slot="content">准妈妈的备孕怀孕孕期百科知识全面了解工具。</view>
+    </i-card>
+</view>

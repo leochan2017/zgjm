@@ -16,7 +16,7 @@ Page({
   },
   onLoad() {
     wx.setNavigationBarTitle({
-      title: '关于'
+      title: '关于作者'
     })
   },
   // 定义转发

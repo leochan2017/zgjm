@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/leo/leo",
     "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/leo/leo",
     "pages/detail/detail",
     "pages/groupList/groupList",
     "pages/titleList/titleList"
@@ -14,10 +15,14 @@
     "navigationBarTitleText": "周公解梦境"
   },
   "navigateToMiniProgramAppIdList": [
-    "wx18a2ac992306a5a4"
+    "wx18a2ac992306a5a4",
+    "wxb30c12d2e291b24b",
+    "wx540226fe722e5773",
+    "wxd14b213ec08339ce",
+    "wx41bab989844cba23"
   ],
   "usingComponents": {
-    "leo-notice-bar": "./lib/leo-notice-bar/index"
-  },
-  "sitemapLocation": "sitemap.json"
+    "leo-notice-bar": "./lib/leo-notice-bar/index",
+    "i-card": "./lib/card/index"
+  }
 }

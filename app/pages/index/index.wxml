@@ -7,12 +7,16 @@
             <image src="../../images/search-btn.png"></image>
         </view>
         <view class="search-body-type">
-            <navigator url="../groupList/groupList" hover-class="navigator-hover">没有头绪？试试分类检索!</navigator>
+            <navigator url="../groupList/groupList" hover-class="navigator-hover">
+                没有头绪？试试分类检索!
+            </navigator>
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="weui-footer__text leo-footer">
-            <navigator url="../leo/leo" hover-class="navigator-hover">关于</navigator>
+        <view class="weui-footer__text index-fotter">
+            <navigator url="../leo/leo" hover-class="navigator-hover">关于作者</navigator>
+            |
+            <navigator url="../recommend/recommend" hover-class="navigator-hover">更多好玩</navigator>
         </view>
     </view>
 </view>
