@@ -21,6 +21,8 @@ Page({
     searchTap() {
         if (!this.checkData()) return
 
+        Util.showAdJiLi()
+
         let key = this.data.searchKey
 
         const index1 = key.indexOf('梦到了')

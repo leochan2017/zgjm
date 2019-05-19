@@ -1,3 +1,5 @@
+const APP = getApp()
+
 /**
  * 分享配置
  * @param  {String} title  [Title]
@@ -18,6 +20,37 @@ const shareConfig = (option = {}) => {
     }
 }
 
+/** 展示激励式广告 */
+const showAdJiLi = () => {
+    console.log('来啦老弟')
+    console.log('APP.globalData', APP.globalData)
+    if (APP.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
+        const videoAd = wx.createRewardedVideoAd({
+            adUnitId: 'adunit-ff76dd10ecad5eba'
+        })
+
+        if (typeof videoAd.load === 'function') {
+            videoAd
+                .load()
+                .then(() => videoAd.show())
+                .catch(err => console.log(err.errMsg))
+        }
+    }
+}
+
+/** 展示插屏广告 */
+const showAdChaPin = () => {
+    if (wx.createInterstitialAd) {
+        const intersitialAd = wx.createInterstitialAd({
+            adUnitId: 'adunit-9bedc6aec11d47c0'
+        })
+
+        intersitialAd.show().catch(err => console.log(err.errMsg))
+    }
+}
+
 module.exports = {
-    shareConfig: shareConfig
+    shareConfig,
+    showAdJiLi,
+    showAdChaPin
 }

@@ -12,40 +12,11 @@ App({
       } else {
         this.globalData.isMore204 = false
       }
-    } catch (e) {}
-
-    setTimeout(this.showAdJiLi, 800)
-
-    this.showAdChaPin()
+    } catch (e) { }
 
     this.globalData.scene = optitons.scene
 
     // this.initCopyCode()
-  },
-  /** 展示激励式广告 */
-  showAdJiLi() {
-    if (this.globalData.isMore204 && typeof wx.createRewardedVideoAd === 'function') {
-      let videoAd = wx.createRewardedVideoAd({
-        adUnitId: 'adunit-ff76dd10ecad5eba'
-      })
-
-      if (typeof videoAd.load === 'function') {
-        videoAd
-          .load()
-          .then(() => videoAd.show())
-          .catch(err => console.log(err.errMsg))
-      }
-    }
-  },
-  /** 展示插屏广告 */
-  showAdChaPin() {
-    if (wx.createInterstitialAd) {
-      let intersitialAd = wx.createInterstitialAd({
-        adUnitId: 'adunit-9bedc6aec11d47c0'
-      })
-
-      intersitialAd.show().catch(err => console.log(err.errMsg))
-    }
   }
   /** 复制神秘代码 */
   // initCopyCode() {
