@@ -4,7 +4,7 @@
             <image class="avatar" src="../../images/avatar.jpg"></image>
         </view>
         <view class="title">
-            <text>周公解梦境 v1.3.0</text>
+            <text>周公解梦境 v1.3.2</text>
         </view>
         <view class="author">
             <text>By 司马雪琳</text>

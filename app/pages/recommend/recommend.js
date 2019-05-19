@@ -1,8 +1,37 @@
-const Util = require('../../utils/util.js')
 Page({
-    data: {},
+    data: {
+        list: [],
+        spinShow: true
+    },
     onLoad() {
         wx.setNavigationBarTitle({ title: '更多好玩' })
+
+        const that = this
+        wx.request({
+            url: 'https://gitee.com/simazhongda/pubilc-file/raw/master/xzx.json',
+            success(res) {
+                that.setData({ spinShow: false })
+                if (!res) {
+                    console.log('res返回失败', res)
+                    return
+                }
+
+                if (!res.data) {
+                    console.log('data返回失败', res)
+                    return
+                }
+
+                const list = res.data.list || []
+
+                if (list.length > 0) {
+                    that.setData({ list })
+                }
+            },
+            fail(err) {
+                console.log('wx.request error', err)
+                that.setData({ spinShow: false })
+            }
+        })
     },
     handleCardTap(e) {
         const appId = e.currentTarget.dataset.appid
@@ -33,7 +62,7 @@ Page({
         return {
             title: title,
             path: path,
-            imageUrl: '../../images/logo/share.png'
+            imageUrl: 'https://gitee.com/simazhongda/pubilc-file/raw/master/logo/share.png'
         }
     }
 })

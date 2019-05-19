@@ -19,10 +19,13 @@
     "wxb30c12d2e291b24b",
     "wx540226fe722e5773",
     "wxd14b213ec08339ce",
-    "wx41bab989844cba23"
+    "wx41bab989844cba23",
+    "wxb72905a3481ac21a",
+    "wx85194c74587a5d34"
   ],
   "usingComponents": {
     "leo-notice-bar": "./lib/leo-notice-bar/index",
-    "i-card": "./lib/card/index"
+    "i-card": "./lib/card/index",
+    "i-spin": "./lib/spin/index"
   }
 }
