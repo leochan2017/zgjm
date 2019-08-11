@@ -1,0 +1,11 @@
+<view>
+    <block wx:if="{{list.length > 0}}">
+        <view class="card-warp" wx:for="{{ list }}" wx:key="{{ index }}" data-appid="{{item.appid}}" bindtap="handleCardTap">
+            <i-card title="{{item.title}}" thumb="{{item.thumb}}">
+                <view slot="content">{{item.content}}</view>
+            </i-card>
+        </view>
+    </block>
+    <view wx:else class="no-app">啊哦...暂无推荐哦</view>
+    <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+</view>

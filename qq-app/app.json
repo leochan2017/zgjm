@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recommend/recommend",
+    "pages/leo/leo",
+    "pages/detail/detail",
+    "pages/groupList/groupList",
+    "pages/titleList/titleList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0E1327",
+    "backgroundColor": "#333449",
+    "navigationBarTitleText": "周公解梦"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx18a2ac992306a5a4",
+    "wxb30c12d2e291b24b",
+    "wx540226fe722e5773",
+    "wxd14b213ec08339ce",
+    "wx41bab989844cba23",
+    "wxb72905a3481ac21a",
+    "wx85194c74587a5d34"
+  ],
+  "usingComponents": {
+    "leo-notice-bar": "./lib/leo-notice-bar/index",
+    "i-card": "./lib/card/index",
+    "i-spin": "./lib/spin/index"
+  }
+}

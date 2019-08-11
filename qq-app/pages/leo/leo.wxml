@@ -1,0 +1,46 @@
+<view class="leo-page">
+    <view class="leo-bd">
+        <view class="logo">
+            <image class="avatar" src="../../images/avatar.jpg"></image>
+        </view>
+        <view class="title">
+            <text>周公解梦 v1.0.0</text>
+        </view>
+        <view class="author">
+            <text>By 司马雪琳</text>
+        </view>
+        <view class="detail">
+            <text>程序媛一枚，业余时间开发小程序！</text>
+        </view>
+        <view class="detail">
+            <text>我妈：整天宅在家找得到男朋友才怪！</text>
+        </view>
+        <view class="detail">
+            <text>我：(,,•́ . •̀,,)</text>
+        </view>
+        <view class="payButton">
+            <view>
+                <!-- <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeMoney">
+                    微信打赏
+                </button> -->
+                <button class="weui-btn mini-btn" type="primary" size="mini" open-type="share">
+                    分享出去
+                </button>
+            </view>
+            <!-- <view hidden="{{!canUseSetClipboardData}}">
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeBtc">BTC打赏</button>
+            </view> -->
+            <!-- <view hidden="{{!canUseSetClipboardData}}">
+                <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="payMeEth">ETH打赏（ERC20系列也可以）</button>
+            </view> -->
+            <!-- <view>
+                <button class="weui-btn mini-btn linkbtn" type="primary" size="mini" bindtap="handleLinkMe">
+                    关联or跳转至本小程序
+                </button>
+            </view> -->
+        </view>
+    </view>
+    <!-- <view class="weui-footer weui-footer_fixed-bottom">
+        <ad unit-id="adunit-b92a9a7e852a4c46"></ad>
+    </view> -->
+</view>
