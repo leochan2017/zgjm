@@ -1,4 +1,4 @@
-![Logo](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/logo/%E6%A2%A6-128.png?raw=true)
+﻿![Logo](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/logo/%E6%A2%A6-128.png?raw=true)
 
 
 ## 周公解梦境 for 微信小程序
@@ -8,7 +8,9 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/leochan2017/zgjm.svg)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 
-我的天，你们拿代码原封不动UI都不改就上架了，改的只是把作者名字给改了就上架，还把我的小程序给弄下架了？？？
+## 简介
+我的天，你们拿代码原封不动UI都不改就上架了，还有只是改了作者名字，更过分的是还把我的小程序给弄下架了？？？
+![截图1](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/jubao.png?raw=true)
 
 
 ## 项目地址
