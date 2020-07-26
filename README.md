@@ -8,6 +8,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/leochan2017/zgjm.svg)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
 
+我的天，你们拿代码原封不动UI都不改就上架了，改的只是把作者名字给改了就上架，还把我的小程序给弄下架了？？？
+
 
 ## 项目地址
 [https://github.com/leochan2017/zgjm](https://github.com/leochan2017/zgjm)
@@ -15,11 +17,6 @@
 
 ## 运行平台
 微信小程序
-
-## 扫码体验
-来，快点掏出你的大手机，打开微信扫一扫吧
-
-![QR CODE](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/logo/gh_54e23eb8715a_258.jpg?raw=true)
 
 
 ## 界面截图
@@ -38,6 +35,9 @@
 
 ## 反馈
 [提交Issues](https://github.com/leochan2017/zgjm/issues/new)
+
+## 打赏作者
+![截图4](https://github.com/leochan2017/zgjm/blob/master/%E7%B4%A0%E6%9D%90/wechat-pay.jpg?raw=true)
 
 
 ## License
